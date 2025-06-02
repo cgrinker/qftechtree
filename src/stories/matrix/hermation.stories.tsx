@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 import * as math from 'mathjs';
 import { expect, userEvent, within } from 'storybook/test';
 import * as mats from '@/components/matrix/constants';
-import { Hermation } from '@/components/matrix';
+import { HermationExplained } from '@/components/matrix';
 import {Box} from '@chakra-ui/react'
 
 const e = math.evaluate;
@@ -16,7 +16,7 @@ const get_rotated = math.matrix([
 
 const meta = {
   title: 'Matrix/Hermation',
-  component: Hermation,
+  component: HermationExplained,
   parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout
     layout: 'fullscreen',
@@ -24,7 +24,7 @@ const meta = {
   decorators: [
       (Story) => (<Box fontSize={"24px"}><Story /></Box>)
   ]
-} satisfies Meta<typeof Hermation>;
+} satisfies Meta<typeof HermationExplained>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
