@@ -9,7 +9,7 @@ import * as math from 'mathjs';
 
 const preview: Preview = {
   decorators: [
-    (Story) => React.createElement(Provider, { /* theme: theme */ }, React.createElement(Story)),
+    (Story) => React.createElement(Provider, undefined, React.createElement(Story)),
     (Story) => {
       //@ts-ignore
       window.clark = "slfkjsdlkf";

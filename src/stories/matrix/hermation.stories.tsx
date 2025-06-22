@@ -23,7 +23,10 @@ const meta = {
   },
   decorators: [
       (Story) => (<Box fontSize={"24px"}><Story /></Box>)
-  ]
+  ],
+  args: {
+    lhs: get_rotated,
+  }
 } satisfies Meta<typeof HermationExplained>;
 
 export default meta;

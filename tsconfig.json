@@ -8,5 +8,9 @@
     "paths": {
       "@/*": ["./src/*"]
     }
-  }
+  },
+  "include": [
+    "src/types/window.d.ts",
+    "src/**/*"
+  ]
 }

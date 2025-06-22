@@ -57,6 +57,7 @@ export function Hermation({ lhs }: { lhs: math.Matrix }) {
 }
 
 export function HermationExplained({ lhs }: { lhs: math.Matrix }) {
+    console.log("HermationExplained", lhs.toString());
     const numRows = lhs.size()[0];
     const numCols = lhs.size()[1];
     const columns = [];
